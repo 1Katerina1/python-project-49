@@ -37,6 +37,10 @@ def main():
         if cong == 4:
             print(f'Congratulations, {name}!')
 
+if __name__ == '__main__':
+    main()
+
+
     
 
 
