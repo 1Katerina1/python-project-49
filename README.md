@@ -3,4 +3,6 @@
 
 <a href="https://codeclimate.com/github/1Katerina1/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/cbeb36e2fc3c5748d0c9/maintainability" /></a>
 
-https://asciinema.org/a/APyuc3AJfs8FqUwY8tEWKjg2w
+#https://asciinema.org/a/APyuc3AJfs8FqUwY8tEWKjg2w
+
+<a href=https://asciinema.org/a/APyuc3AJfs8FqUwY8tEWKjg2w><img src=https://asciinema.org/a/APyuc3AJfs8FqUwY8tEWKjg2w width="836"/></a>
