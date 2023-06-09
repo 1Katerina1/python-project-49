@@ -23,14 +23,14 @@ def progression(name):
             arr.append(x)
             i += 1
 
-        y = randint(0,9)
+        y = randint(0, 9)
         cor = arr[y]
         arr[y] = '..'
         s = ' '.join(map(str, arr))
-        
+
         print('Question:', s)
         ans = prompt.string('Your answer: ')
-        
+
         if str(cor) == str(ans):
             cong += 1
             print('Correct!')
@@ -38,5 +38,3 @@ def progression(name):
             wrong_answer(cor, ans, name)
 
         win(name, cong)
-
-

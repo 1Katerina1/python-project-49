@@ -27,7 +27,3 @@ def gcd(name):
             wrong_answer(cor, ans, name)
 
         win(name, cong)
-        
-
-
-

@@ -1,5 +1,5 @@
 import prompt
-from sympy import *
+from sympy import isprime
 from random import choice
 from random import randint
 from brain_games.games.general_logic import wrong_answer
@@ -15,7 +15,8 @@ def prime(name):
 
     while step <= 3 and str(ans) == str(cor):
         step += 1
-        prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
+        prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
+                 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
         y = choice(prime)
         x = randint(1, 150)
         z = choice([x, y])
@@ -23,7 +24,7 @@ def prime(name):
         ans = prompt.string('Your answer: ')
         corr = isprime(z)
 
-        if corr == True:
+        if corr:
             cor = 'yes'
         else:
             cor = 'no'
@@ -35,4 +36,3 @@ def prime(name):
             wrong_answer(cor, ans, name)
 
         win(name, cong)
-

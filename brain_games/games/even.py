@@ -1,6 +1,7 @@
 from random import randint
 import prompt
-from brain_games.games.general_logic import *
+from brain_games.games.general_logic import win
+from brain_games.games.general_logic import wrong_answer
 
 
 def even(name):
@@ -11,16 +12,15 @@ def even(name):
     cong = 0
 
     while step <= 3 and ans == cor:
-        x = randint(1,100)
+        x = randint(1, 100)
         step += 1
         print('Question:', x)
         ans = prompt.string('Your answer: ')
-    
+
         if x % 2 == 0:
             cor = 'yes'
         else:
             cor = 'no'
-
 
         if (x % 2 == 0 and ans == 'yes') or (x % 2 != 0 and ans == 'no'):
             cong += 1
@@ -28,5 +28,5 @@ def even(name):
 
         else:
             wrong_answer(cor, ans, name)
-        
+
         win(name, cong)
